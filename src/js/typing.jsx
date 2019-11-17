@@ -150,7 +150,7 @@ class Text extends Component {
     isWordOk(c) {
         const dCount = this.everyWordsCount[c] || 0;
         const prob = this.everyWordsProb[c] || 0.5;
-        return prob >= 0.7 && dCount >= 2;
+        return prob >= 0.5 && dCount >= 2;
     }
 
     selectFromWords() {
